@@ -33,6 +33,9 @@ body {
   height: 100%;
 }
 
+#container div {
+  padding: 0 5em;
+}
 #container div p {
   line-height: 1.2em;
   margin-top: 20px;
@@ -67,6 +70,10 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  #container div {
+    padding: 0 2em;
+  }
+
   #container div p {
     font-size: 1.5rem;
   }
