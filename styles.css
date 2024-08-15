@@ -15,10 +15,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* position: relative; */
+  position: relative;
   height: 100vh;
   color: #ffffff;
-  font-size: 1.8rem;
   text-align: center;
   overflow: hidden;
   padding: 10px 0;
@@ -26,6 +25,7 @@ body {
 }
 
 #container h2 {
+  font-size: 2.5rem;
   margin-top: 2rem;
 }
 
@@ -36,7 +36,7 @@ body {
 #container div {
   padding: 0 5em;
 }
-#container div p {
+#container .advice p {
   line-height: 1.2em;
   margin-top: 20px;
   margin-bottom: auto;
@@ -44,6 +44,10 @@ body {
   width: 100%;
   padding: 0 10px;
 }
+
+/* .loader {
+  display: none;
+} */
 
 #loadAdviceBtn {
   border-style: none;
@@ -61,7 +65,29 @@ body {
   &:hover {
     background-color: #161622;
     color: #ffffff;
-    /* border: 1px solid  #fff; */
+  }
+}
+
+/* Loader */
+.loader {
+  aspect-ratio: 3.5;
+  --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
 

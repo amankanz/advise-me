@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Advise Me</title>
   </head>
   <body>
@@ -11,11 +15,16 @@
       <h2>Advise Me 👴</h2>
 
       <section class="advice-container">
-        <div>
+        <div class="advice">
+          <i class="fa-sharp fa-solid fa-quote-left"></i>
           <p id="loadingAdvice">Press "Get advice" to be advised...🌟</p>
         </div>
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
+
         <button id="loadAdviceBtn">Get advice</button>
       </section>
+
       <img src="./assets/1.png" alt="advise-me logo" id="adviseMeImg" />
     </mani>
 
